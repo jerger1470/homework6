@@ -8,10 +8,9 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>    
-    <script defer src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script defer src="script.js"></script>
+    
 
 </head>
 <body>
@@ -20,17 +19,29 @@
         <h1 class="display-4">Weather App</h1>
         <p class="lead">Find the weather in your local area and other spots around the globe</p>
         <hr class="my-4">
-        <p>Get your current local weather, click here</p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Weather Update</a>
+        
       </div>
 
-      <div class="row row-cols-1 row-cols-md-2">
+      <div id="Weather-container" class="row row-cols-1 row-cols-md-2">
         
         <div class="col mb-6">
           <div class="card">
               <div class="card-body">
               <h5 class="card-title">Local Weather</h5>
-              <div id="localWeather"></div>
+              <div class="notification"></div>
+              <div class="localWeather"></div>
+                <div class="weather-icon">
+                    <img src="assets/unknown.png" alt="unknown">
+                </div>
+                <div class="temprature-value">
+                    <p>- °<span>C</span></p>
+               </div>
+               <div class="temprature-description">
+                   <p>-</p>
+               </div>
+               <div class="location">
+                   <p>-</p>
+               </div>
             </div>
           </div>
         </div>
@@ -38,7 +49,24 @@
           <div class="card">
               <div class="card-body">
               <h5 class="card-title">Selected Location</h5>
-              <div id="selectedLocation"></div>
+              <div class = "input">
+                <input type="text" class="inputValue" placeholder="Enter City Name">
+                <input type="button" value="Submit">
+              </div>
+              <div class="selectedWeather">
+              </div>
+                <div class="weather-iconS">
+                    <img src="assets/unknown.png" alt="unknown">
+                </div>
+                <div class="temprature-valueS">
+                    <p>- °<span>C</span></p>
+               </div>
+               <div class="temprature-descriptionS">
+                   <p>-</p>
+               </div>
+               <div class="locationS">
+                   <p>-</p>
+               </div>
             </div>
           </div>
         </div>
@@ -53,6 +81,6 @@
       </div>
     </div>
 
-    
+         
 </body>
 </html>
