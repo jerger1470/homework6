@@ -8,10 +8,10 @@ const locationElement = document.getElementById(".location")
 const notificationElement = document.getElementById(".notification")
 const buttonElement = document.getElementById("submit")
 const inputValue = document.getElementById("inputValue")
-const locationElementS = document.getElementById(".locationS")
-const iconElementS = document.getElementById(".weather-iconS")
-const tempElementS = document.getElementById(".temperature-valueS")
-const descElementS = document.getElementById(".temperature-descriptionS")
+const locationElementS = document.getElementById("locationS")
+const iconElementS = document.getElementById("weather-iconS")
+const tempElementS = document.getElementById("temperature-valueS")
+const descElementS = document.getElementById("temperature-descriptionS")
 
 
 //Data
@@ -43,7 +43,7 @@ window.addEventListener("load",() => {
 //local weather from api
 
 function getWeather(lat, lon){
-    fetch (`https://api.openweathermap.org/data/2.5/weather?lat={lat)&lon={lon}&appid=062c7dca4b324ae41a41ee73c66e4fce`)
+    fetch (`https://api.openweathermap.org/data/2.5/weather?lat=`+ {lat} + `&lon=`+ {lon} +`&appid=062c7dca4b324ae41a41ee73c66e4fce`)
         .then(response => response.json())
         .then(data => console.log(data))
         
