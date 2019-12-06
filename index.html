@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script defer src="script.js"></script>
     
 
@@ -28,18 +28,17 @@
           <div class="card">
               <div class="card-body">
               <h5 class="card-title">Local Weather</h5>
-              <div class="notification"></div>
               <div class="localWeather"></div>
-                <div class="weather-icon">
+                <div id="weather-icon">
                     <img src="assets/unknown.png" alt="unknown">
                 </div>
-                <div class="temprature-value">
+                <div id="temperature-value">
                     <p>- °<span>C</span></p>
-               </div>
-               <div class="temprature-description">
+                </div>
+                <div id="temperature-description">
                    <p>-</p>
                </div>
-               <div class="location">
+               <div id="location">
                    <p>-</p>
                </div>
             </div>
@@ -59,7 +58,7 @@
                     <img src="assets/unknown.png" alt="unknown">
                 </div>
                 <div id="temperature-valueS">
-                    <p>- °<span>C</span></p>
+                     <span>°C</span>
                </div>
                <div id="temperature-descriptionS">
                    <p>-</p>
@@ -75,7 +74,12 @@
         <div class="card">
             <div class="card-body">
             <h5 class="card-title">5 Day Selected Forcast</h5>
-            <div id="fiveDay"></div>
+            <div class="fiveDay"></div>
+              <div id= "dayOne"></div>
+              <div id= "dayTwo"></div>
+              <div id= "dayThree"></div>
+              <div id= "dayFour"></div>
+              <div id= "dayFive"></div>
           </div>
         </div>
       </div>
